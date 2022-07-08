@@ -1,0 +1,29 @@
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE IF NOT EXISTS "restaurantsfq" (
+"index" INTEGER,
+  "Name" TEXT,
+  "Location" TEXT,
+  "Rating" REAL
+);
+CREATE INDEX "ix_restaurantsfq_index"ON "restaurantsfq" ("index");
+CREATE TABLE IF NOT EXISTS "restaurants" (
+"index" INTEGER,
+  "Name" TEXT,
+  "Location" TEXT,
+  "Rating" REAL
+);
+CREATE INDEX "ix_restaurants_index"ON "restaurants" ("index");
+CREATE TABLE IF NOT EXISTS "restaurantsfsq" (
+"index" INTEGER,
+  "Name" TEXT,
+  "Location" TEXT,
+  "Rating" REAL
+);
+CREATE INDEX "ix_restaurantsfsq_index"ON "restaurantsfsq" ("index");
+CREATE TABLE IF NOT EXISTS "restaurantsy" (
+"index" INTEGER,
+  "Name" TEXT,
+  "Location" TEXT,
+  "Rating" REAL
+);
+CREATE INDEX "ix_restaurantsy_index"ON "restaurantsy" ("index");
